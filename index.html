@@ -3,14 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>homework3</title>
+
   </head>
-  <body>    
-    <iframe src="music.mp3" allow="autoplay" id="audio"></iframe>
+  <style>
+    body {background-color: aliceblue;}
+    h1   {color: blue;}
+  </style>
+  <style>
+    a:hover {
+      color: red;
+      background-color: transparent;
+      text-decoration: underline;
+    }
+  </style>
+  <body>
+    <p>Time: <span id="datetime"></span></p>
+    <script>
+      var dt = new Date();
+      document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+      </script>      
+    <iframe src="music.mp3" allow="autoplay" id="audio" hidden = "True"></iframe>
     <audio id="player" autoplay loop>
       <source src="music.mp3" type="audio/mp3">
     </audio>
-    </audio>
-    <bgsound src="music.mp3" autostart=true loop=infinite> 
     <h1>BIOGRAPHY</h1>
     <h2>基本資料</h2>
     <p>姓名：陳廷威</p>
@@ -21,7 +36,7 @@
     <p>就讀科系：台灣大學電機工程學系</p>
     <p>網址：<a href="url">https://web.ee.ntu.edu.tw/</a></p>
     <h2>興趣</h2>
-    <p>棒球迷 <a href="url">https://www.mlb.com/</a></p>
+    <p>棒球 <a href="url">https://www.mlb.com/</a></p>
     <p>追劇 <a href="url">https://www.netflix.com/</a></p>
     <p>桌遊 <a href="url">https://www.swanpanasia.com/</a></p>
   </body>
